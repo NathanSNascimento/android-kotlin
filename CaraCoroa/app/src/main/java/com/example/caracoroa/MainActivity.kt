@@ -14,13 +14,15 @@ class MainActivity : AppCompatActivity() {
 
         button_jogar.setOnClickListener {
 
-            val intent = Intent(this, ResultadoActivity::class.java)
+            val intent = Intent(applicationContext, ResultadoActivity::class.java)
 
             val numSorteado = Random().nextInt(2);
 
-            intent.putExtra("numero:", numSorteado)
+            intent.putExtra("numero", numSorteado)
 
             startActivity(intent)
+
+
         }
     }
 }

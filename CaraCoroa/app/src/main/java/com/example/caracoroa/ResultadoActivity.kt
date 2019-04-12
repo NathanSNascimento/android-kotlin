@@ -13,7 +13,7 @@ class ResultadoActivity : AppCompatActivity() {
         val dados: Bundle = intent.extras
         val numSorteado = dados.getInt("numero")
 
-        if (numSorteado == 1 ){
+        if (numSorteado == 0 ){
             image_result.setImageResource(R.drawable.moeda_cara)
         }else{
             image_result.setImageResource(R.drawable.moeda_coroa)
